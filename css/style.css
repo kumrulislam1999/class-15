@@ -1,0 +1,1040 @@
+/* Start Common CSS Style Here */
+:root {
+    /* common font-Variable */
+    --primary_font: 'Poppins', sans-serif;
+    --secondary_font: 'PT Sans', sans-serif;
+
+    /* Common Color-Color_Variable */
+    --Primary_color: #353535;
+    --secondary_color: #7a7a7a;
+    --btn_hover_color: #ffcc00;
+    --btn_hover_font_color: #ffffff;
+    --section_bg_color: linear-gradient(130deg, #FC0 0%, #FFF5CB 100%);
+    --service_section_bg_color: #FFF7D5;
+    --feedback_section_bg_color: #FBFBFB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary_font);
+    color: var(--Primary_color);
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1,
+h2 {
+    font-family: var(--secondary_font);
+}
+
+.font-color {
+    color: var(--secondary_color);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    text-align: center;
+    padding: 16px 0;
+    color: var(--Primary_color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: capitalize;
+    border: 1px solid var(--Primary_color);
+    border-radius: 20px;
+    background: none;
+
+}
+
+.btn_h:hover {
+    color: var(--btn_hover_font_color);
+    background-color: var(--btn_hover_color);
+    border-color: transparent;
+}
+
+.btn_sm {
+    width: 171px;
+}
+
+.btn_lg {
+    width: 209px;
+}
+
+.w_33 {
+    width: calc((100% / 3) - 19px);
+}
+
+.w_30 {
+    width: 30%;
+}
+
+.w_40 {
+    width: 40%;
+}
+
+.w_50 {
+    width: 50%;
+}
+
+.w_60 {
+    width: 60%;
+}
+
+.w_70 {
+    width: 70%;
+}
+
+.section_info h2 {
+    color: var(--Primary_color);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.section_info h3 {
+    color: var(--Primary_color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 43px;
+}
+
+.section_info h4 {
+    color: var(--Primary_color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 34px;
+}
+
+.section_info h5 {
+    color: var(--Primary_color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.p_20 {
+    color: var(--Primary_color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+/* End Common CSS Style Here */
+
+/* Start Header Section CSS Style Here */
+
+#header_section .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header_section ul li>a {
+    position: relative;
+    text-align: center;
+    color: var(--Primary_color);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 18px 22px 5px;
+}
+
+#header_section ul li>a::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 0;
+    height: 1px;
+    background-color: var(--Primary_color);
+
+
+}
+
+#header_section ul li>a:hover::before {
+    width: 100%;
+    transition: 0.4s;
+    right: 0;
+
+}
+
+#header_section ul li>a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: var(--Primary_color);
+}
+
+#header_section ul li>a:hover::after {
+    width: 100%;
+    transition: 0.6s;
+    left: 0;
+}
+
+/* End Header Section CSS Style Here */
+
+/* Start Bannar Section CSS Style Here */
+#bannar_section {
+    padding: 82px 0 134px;
+}
+
+#bannar_section .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bannar_section .section_info h6 {
+    color: var(--Primary_color);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#bannar_section .section_info h1 {
+    color: var(--Primary_color);
+    font-size: 64px;
+    font-weight: 700;
+}
+
+#bannar_section .bannar_section_btn .btn {
+    margin: 77px 40px 66px 0;
+}
+
+#bannar_section .bannar_section_btn i {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 24px;
+    margin-left: 11px;
+}
+
+#bannar_section .section_info .flowing_link {
+    justify-content: start;
+}
+
+#bannar_section .section_info .flowing_link li {
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin-right: 16px;
+
+}
+
+#bannar_section .section_info .flowing_link li:first-child {
+    margin: 0;
+    margin-right: 34px;
+}
+
+#bannar_section .section_info .flowing_link i {
+    color: var(--Primary_color);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+#bannar_section .section_image {
+    position: relative;
+    transform: translateX(20%);
+
+}
+
+#bannar_section .section_image .position {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(10%, -50%);
+}
+
+#bannar_section .section_image img {}
+
+/* End Bannar Section CSS Style Here */
+
+/* Start about Section CSS Style Here */
+#about_section {
+    padding-top: 78px;
+    background: linear-gradient(130deg, #FC0 0%, #FAFFCB 100%, #FAFFCB 100%);
+}
+
+#about_section .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about_section .section_info {
+    padding: 0 0 86px 35px;
+    position: relative;
+}
+
+#about_section .section_info p {
+    padding: 26px 0 45px 0;
+}
+
+#about_section .section_info img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(35%);
+}
+
+/* End about Section CSS Style Here */
+
+/* Start Quality Section CSS Style Here */
+#quality_section {
+    text-align: center;
+    padding: 165px 0 151px;
+    background-color: var(--btn_hover_font_color);
+}
+
+#quality_section .section_item {
+    padding: 39px 47px 57px;
+}
+
+#quality_section .section_item img {
+    margin: 0 auto;
+}
+
+#quality_section .section_item h3 {
+    color: var(--Primary_color);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 39px;
+    padding: 14px 0 18px;
+}
+
+#quality_section .section_item p {
+    color: var(--secondary_color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* End Quality Section CSS Style Here */
+
+/* Start Branding Section CSS Style Here */
+#branding_section .info {
+    position: relative;
+    padding-top: 17px;
+    border-radius: 30px;
+    background: linear-gradient(130deg, #FC0 0%, #FFF5CB 100%);
+}
+
+#branding_section .row {
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#branding_section .section_info {
+    padding-left: 103px;
+    padding-right: 65px;
+    position: relative;
+}
+
+#branding_section .section_info h2 {
+    color: var(--Primary_color);
+    font-size: 44px;
+    font-weight: 700;
+}
+
+#branding_section .section_info p {
+    color: var();
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    padding: 21px 0 35px;
+}
+
+#branding_section .section_info img {
+    position: absolute;
+    bottom: 99px;
+    left: 290px;
+
+}
+
+#branding_section .info>img {
+    position: absolute;
+    top: -33px;
+    right: 64px;
+}
+
+#branding_section .section_info .btn {
+    margin-bottom: 75px;
+}
+
+/* End Branding Section CSS Style Here */
+
+/* Start Help Section Here CSS Style Here */
+#help_section {
+    padding: 147px 0;
+}
+
+#help_section .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#help_section .section_item {
+    padding: 17px 0 21px 29px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: var(--btn_hover_font_color);
+}
+
+#help_section .section_item:nth-child(2) {
+    margin: 24px 0;
+}
+
+#help_section .section_image {
+    width: 58px;
+    padding: 13px;
+    border-radius: 50%;
+}
+
+#help_section .section_image img {
+    margin: auto;
+    height: 32px;
+    width: 32px;
+}
+
+#help_section .section_item:nth-child(1) .section_image {
+    background-color: #55852F;
+    ;
+}
+
+#help_section .section_item:nth-child(2) .section_image {
+    background-color: #FEDC2A;
+    ;
+}
+
+#help_section .section_item:nth-child(3) .section_image {
+    background-color: #FF8D3A;
+    ;
+}
+
+#help_section .section_details {
+    width: calc((100% - 58px) - 18px);
+    margin-left: 18px;
+}
+
+#help_section .section_info_complated {
+    padding-left: 195px;
+    text-align: right;
+}
+
+#help_section .section_info_complated>p {
+    padding: 26px 0 32px;
+    color: var(--Primary_color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+#help_section .section_info_complated .complated_project {
+    text-align: left;
+    justify-content: right;
+}
+
+#help_section .complated_project p {
+    font-size: 14px;
+    color: var(--Primary_color);
+    font-weight: 500;
+    line-height: 25px;
+}
+
+#help_section .complated_project h3 {
+    color: var(--Primary_color);
+    font-size: 40px;
+    font-family: var(--secondary_font);
+    font-weight: 700;
+}
+
+#help_section .complated_project .clients_info {
+    margin-left: 67px;
+}
+
+/* End Help Section Here CSS Style Here */
+
+/* Start Experience Section Here CSS style Here */
+#experience_section {
+    padding: 80px 0;
+}
+
+#experience_section .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#experience_section .inner_section_info {
+    position: relative;
+    padding: 100px 0;
+
+
+}
+
+#experience_section .section_item {
+    padding-bottom: 44px;
+}
+
+#experience_section .section_item:nth-child(3) {
+    padding: 0;
+}
+
+#experience_section .inner_section_info h3 {
+    padding-bottom: 16px;
+}
+
+#experience_section .section_inner_heading p {
+    color: var(--secondary_color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+#experience_section .section_inner_item p {
+    color: var(--secondary_color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+#experience_section .section_item {
+    position: relative;
+}
+
+#experience_section .section_item::before {
+    position: absolute;
+    z-index: 3;
+    left: 35%;
+    top: 0;
+    content: '';
+    border-left: 1px dashed var(--secondary_color);
+    height: 100%;
+}
+
+#experience_section .section_item::after {
+    content: '';
+    position: absolute;
+    left: 35%;
+    top: 0;
+    z-index: 4;
+    width: 42px;
+    height: 42px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 1px dashed var(--secondary_color);
+    background-color: var(--btn_hover_font_color);
+}
+
+#experience_section .section_item .circle {
+    z-index: 5;
+    position: absolute;
+    left: 35%;
+    top: 0;
+    transform: translate(-50%, 55%);
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+#experience_section .section_item:nth-child(1) .section_inner_item:hover .circle {
+    background-color: #52AB70;
+}
+
+#experience_section .section_item:nth-child(2) .section_inner_item:hover .circle {
+    background-color: #F17676;
+}
+
+#experience_section .section_item:nth-child(3) .section_inner_item:hover .circle {
+    background-color: #FFD233;
+}
+
+/* End Experience Section CSS style Here */
+
+/* Start Expert Section CSS Style Here */
+#expert_section {
+    padding: 147px 0;
+}
+
+#expert_section .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#expert_section .section_details {
+    padding-right: 145px;
+}
+
+#expert_section .section_details p {
+    color: var(--secondary_color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+#expert_section .section_details>p:nth-child(2) {
+    padding: 49px 0 14px;
+}
+
+#expert_section .section_details .btn {
+    margin-top: 39px;
+}
+
+#expert_section .section_details .btn i {
+    margin-left: 11px;
+}
+
+#expert_section .skill_section_info .btn {
+    width: 174px;
+    margin-bottom: 7px;
+}
+
+#expert_section .skill_section_info .btn:first-child {
+    margin-right: 72px;
+}
+
+#expert_section .skill_box {
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 6px;
+    border-radius: 50px;
+}
+
+#expert_section .skill_bar {
+    margin-top: 44px;
+}
+
+#expert_section .skill_bar .inner_box {
+    text-align: right;
+    height: 100%;
+    border-radius: 50px 0 0 50px;
+
+}
+
+#expert_section .skill_section_info .skill_bar:nth-child(2) .inner_box {
+    background-color: #F16500;
+    width: 85%;
+}
+
+#expert_section .skill_section_info .skill_bar:nth-child(3) .inner_box {
+    background-color: #03249B;
+    width: 75%;
+}
+
+#expert_section .skill_section_info .skill_bar:nth-child(4) .inner_box {
+    background-color: #700D60;
+    width: 80%;
+}
+
+#expert_section .skill_section_info .skill_bar:nth-child(5) .inner_box {
+    background-color: #234BDA;
+    width: 70%;
+}
+
+#expert_section .skill_section_info .inner_box h4 {
+    transform: translateY(-30px);
+}
+
+/* End Expert Section CSS Style Here */
+
+/* Start Service Section CSS Style Here */
+#service_section {
+    text-align: center;
+    padding: 71px 0 104px;
+    background-color: var(--service_section_bg_color);
+}
+
+#service_section .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#service_section .section_info>p {
+    color: var(--secondary_color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 13px 0 73px;
+}
+
+#service_section .section_info .section_item {
+    padding: 37px 51px 72px;
+    border-radius: 12px;
+    border: 0.1px solid var(--Primary_color);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.06);
+}
+
+#service_section .section_info .section_item img {
+    margin: auto;
+}
+
+#service_section .section_info .section_item h3 {
+    padding: 26px 0 20px;
+    color: var(--Primary_color);
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 46px;
+}
+
+#service_section .section_info .section_item p {
+    color: var(--secondary_color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+#service_section .section_info .section_item:hover {
+    background: linear-gradient(151deg, #FC0 0%, #FFE476 98.84%);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.06);
+}
+
+/* End Service Section CSS Style Here */
+
+/* Start FeedBack Section CSS style Here */
+#feedback_section {
+    padding: 92px 0 58px;
+    background-color: var(--feedback_section_bg_color);
+}
+
+#feedback_section .row {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: ;
+}
+
+#feedback_section .section_info>p {
+    color: var(--secondary_color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 63px;
+}
+
+#feedback_section .inner_section_info {
+    padding-left: 99px;
+}
+
+#feedback_section .inner_section_info p {
+    color: var(--secondary_color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    padding-bottom: 28px;
+}
+
+#feedback_section .inner_section_info .titel_part {
+    padding-left: 50px;
+}
+
+#feedback_section .inner_section_info .titel_part p {
+    color: var(--secondary_color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+/* End FeedBack Section CSS style Here */
+
+
+/* Start Blog Section Here */
+#blog_section {
+    padding-top: 91px;
+}
+
+#blog_section .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#blog_section .section_info h2 {
+    text-align: right;
+    padding-bottom: 112px;
+}
+
+#blog_section .inner_section_info {
+    padding-left: 34px;
+}
+
+#blog_section .inner_section_info h4 {
+    margin: 14px 0;
+    padding-bottom: 60px;
+}
+
+#blog_section .inner_section_info h6 {
+    text-align: right;
+    color: var(--Primary_color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+#blog_section .inner_section_info p {
+    color: var(--Primary_color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#blog_section .inner_section_info p>i {
+    color: var(--secondary_color);
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: center;
+}
+
+#blog_section .inner_section_info .btn {
+    border: 0;
+}
+
+#blog_section .inner_section_info .btn>i {
+    color: var(--Primary_color);
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: center;
+    rotate: 40deg;
+}
+
+#blog_section .section_item {
+    margin-bottom: 40px;
+    width: calc((100% - 61px) /2);
+}
+
+#blog_section .new_letter_inner_section {
+    border-radius: 30px;
+    margin: 166px auto 152px;
+    padding: 81px 54px 76px 86px;
+    background: linear-gradient(130deg, #FC0 0%, #FFF5CB 100%);
+}
+
+#blog_section .new_letter_inner_section h6 {
+    color: var(--Primary_color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+#blog_section .new_letter_inner_section h3 {
+    color: var(--Primary_color);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 72px;
+}
+
+#blog_section .new_letter_inner_section p {
+    color: var(--Primary_color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+#blog_section .new_letter_inner_section .section_info_form {
+    padding: 86px 0 81px 76px;
+}
+
+#blog_section .new_letter_inner_section .form_feild {
+    position: relative;
+    width: 100%;
+    height: 82px;
+    padding-left: 34px;
+    border-radius: 16px;
+    background-color: var(--btn_hover_font_color);
+}
+
+#blog_section .section_info_form .form_feild input {
+    color: var(--secondary_color);
+    height: 100%;
+    width: 70%;
+    border-color: transparent;
+    background-color: var(--btn_hover_font_color);
+
+}
+
+#blog_section .section_info_form .form_feild button {
+    color: var(--btn_hover_font_color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    border-radius: 0 16px 16px 0;
+    border-color: transparent;
+    background-color: #FF6565;
+    cursor: pointer;
+}
+
+/* End Blog Section Here */
+
+/* Start Footer Section CSS Style Here */
+#footer_section {
+    padding: 71px 0 85px;
+    background-color: #575757;
+}
+
+#footer_section .row {
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+#footer_section .inner_section_info .section_info_item:last-child {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+#footer_section .inner_section_info {
+    margin-bottom: 94px;
+    text-align: right;
+}
+
+#footer_section .inner_section_info h3 {
+    color: var(--btn_hover_font_color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+#footer_section .inner_section_info p {
+    color: #bbb9b9;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+#footer_section .inner_section_info_address p:first-child {
+    color: #bbb9b9;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+#footer_section .inner_section_info_address p:last-child {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+#footer_section .inner_section_info_address ul li {
+    color: var(--btn_hover_font_color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+#footer_section .inner_section_info_address ul li:first-child {
+    margin: 0;
+    margin-right: 14px;
+}
+
+#footer_section .inner_section_info_address ul li {
+    display: inline-block;
+
+
+}
+
+
+#footer_section .inner_section_info_address ul li>a>i {
+    color: var(--btn_hover_font_color);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #484848;
+    border: 1px solid transparent;
+    margin: 0 5px;
+}
+
+/* End Footer Section CSS Style Here */
+
+
+
+/* Start About Page Section Here */
+
+
+/* start About Page about Heading Section CSS Style Here */
+#about_heading_section .section_info {
+    margin-top: 60px;
+    color: var(--btn_hover_font_color);
+    text-align: center;
+    padding: 45px 0 34px;
+    border-radius: 20px;
+    background: linear-gradient(0deg, rgba(255, 204, 0, 0.66) 0%, rgba(255, 204, 0, 0.66) 100%), url(<path-to-image>), lightgray -1.5px 0px / 100.27% 460.87% no-repeat;
+}
+
+#about_heading_section .section_info h2 {
+    color: var(--btn_hover_font_color);
+    font-size: 46px;
+    font-weight: 700;
+}
+
+#about_heading_section .section_info p {
+    position: relative;
+    color: var(--btn_hover_font_color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 34px;
+    padding: 7px 255px 0;
+}
+
+#about_heading_section .section_info p::before {
+    position: absolute;
+    z-index: 7;
+    content: '';
+    width: 84px;
+    height: 2px;
+    background-color: var(--btn_hover_font_color);
+    transform: translate(-100%, 800%);
+}
+
+#about_heading_section .section_info p::after {
+    position: absolute;
+    z-index: 7;
+    content: '';
+    width: 84px;
+    height: 2px;
+    background-color: var(--btn_hover_font_color);
+    transform: translate(0%, 800%);
+}
+
+/* End About Page about Heading Section CSS Style Here */
+
+/* End About Page Section Here */
